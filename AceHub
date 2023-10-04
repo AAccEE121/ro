@@ -2,7 +2,7 @@ print("MADE BY ACE")
 local Players = game:GetService("Players")
 local player = game.Players.LocalPlayer
 
-local outlineColor = Color3.new(1, 0, 0) -- Red color (customize outline color)
+local outlineColor = Color3.new(0, 0, 0) -- Red color (customize outline color)
 local outlineSize = Vector3.new(1.05, 1.05, 1.05) -- Slightly larger size for outline
 local outlineTransparency = 0.7 -- Customize the transparency of the outline
 
@@ -38,7 +38,7 @@ function createBillboard(player)
     if head then
         local billboardGui = Instance.new("BillboardGui")
         billboardGui.Adornee = head
-        billboardGui.Size = UDim2.new(2, 0, 2, 0) -- 2x bigger size
+        billboardGui.Size = UDim2.new(8, 0, 8, 0) -- 2x bigger size
         billboardGui.StudsOffset = Vector3.new(0, 0, 0) -- At the player's head
         billboardGui.AlwaysOnTop = true
 
